@@ -1,0 +1,43 @@
+body {
+  height: 100vh;
+}
+
+#display {
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
+}
+
+#music-icon {
+  align-self: flex-end;
+}
+
+.container {
+  background-image: linear-gradient(to right, #d6ae7b, #eacda3);
+  max-width: 800px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 30px 10px #574631;
+}
+
+#music-icon {
+  margin: 10px;
+}
+
+#display {
+  font-size: x-large;
+  margin: 10px;
+  background-color: beige;
+  padding: 10px;
+  box-shadow: 0px 0px 0px 2px #000;
+}
+
+.container > button {
+  margin: 10px;
+}
+
+
+/*# sourceMappingURL=/styles.b61e60ae.css.map */
