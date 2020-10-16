@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oil Driller</title>
+    <link rel="stylesheet" href="../node_modules/nes.css/css/nes.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <a onClick="togglePlay()">
+        <img
+          id="music-icon"
+          class="nes-avatar is-medium"
+          alt="Music icon"
+          src="images/music.png"
+          style="image-rendering: pixelated"
+      /></a>
+      <div id="display" class="nes-text is-success"></div>
+      <audio id="main-theme" src="audio/main-theme.m4a" preload="auto"></audio>
+      <button type="button" id="buttonAdd" class="nes-btn is-primary">
+        Click me!
+      </button>
+      <button id="buttonBucket" class="nes-btn is-disabled">
+        Increase bucket capacity
+      </button>
+      <button id="buttonWorker" class="nes-btn is-disabled">Hire worker</button>
+      <button id="buttonRobot" class="nes-btn is-disabled">Buy a robot</button>
+      <script type="text/javascript" src="/js/index.js"></script>
+    </div>
+  </body>
+</html>

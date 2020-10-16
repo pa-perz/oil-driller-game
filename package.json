@@ -1,0 +1,19 @@
+{
+  "name": "personal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel serve src/index.html src/js/index.js --open",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nes.css": "^2.3.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
