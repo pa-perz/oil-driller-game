@@ -1,10 +1,12 @@
-let display = document.getElementById("display");
-let buttonAdd = document.getElementById("buttonAdd");
-let buttonBucket = document.getElementById("buttonBucket");
-let buttonWorker = document.getElementById("buttonWorker");
-let buttonRobot = document.getElementById("buttonRobot");
-let mainTheme = document.getElementById("main-theme");
-let musicIcon = document.getElementById("music-icon");
+import "nes.css/css/nes.min.css";
+
+const display = document.getElementById("display");
+const buttonAdd = document.getElementById("buttonAdd");
+const buttonBucket = document.getElementById("buttonBucket");
+const buttonWorker = document.getElementById("buttonWorker");
+const buttonRobot = document.getElementById("buttonRobot");
+const mainTheme = document.getElementById("main-theme");
+const musicIcon = document.getElementById("music-play");
 
 let money = 0;
 let bonus = 0;
@@ -19,7 +21,7 @@ mainTheme.volume = 0.5;
 mainTheme.play();
 
 function togglePlay() {
-  return mainTheme.paused() ? mainTheme.play() : mainTheme.pause();
+  return mainTheme.paused ? mainTheme.play() : mainTheme.pause();
 }
 
 function moneyFormat(number) {
@@ -135,7 +137,7 @@ buttonAdd.addEventListener("click", addMoney);
 buttonBucket.addEventListener("click", increaseBonus);
 buttonWorker.addEventListener("click", increaseWorker);
 buttonRobot.addEventListener("click", increaseRobot);
-musicIcon.addEventListener("click", musicControl);
+musicIcon.addEventListener("click", togglePlay);
 
 workerInterval = window.setInterval(workerClick, 5000);
 robotInterval = window.setInterval(robotClick, 1000);

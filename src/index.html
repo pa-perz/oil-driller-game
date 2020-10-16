@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oil Driller</title>
-    <link rel="stylesheet" href="../node_modules/nes.css/css/nes.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <!--  <link rel="stylesheet" href="" /> -->
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
@@ -13,7 +13,8 @@
   </head>
   <body>
     <div class="container">
-      <a onClick="togglePlay()">
+      <audio id="main-theme" src="audio/main-theme.m4a" preload="auto"></audio>
+      <a id="music-play">
         <img
           id="music-icon"
           class="nes-avatar is-medium"
@@ -21,8 +22,8 @@
           src="images/music.png"
           style="image-rendering: pixelated"
       /></a>
+      <h1 class="h1-text">OIL DRILLER</h1>
       <div id="display" class="nes-text is-success"></div>
-      <audio id="main-theme" src="audio/main-theme.m4a" preload="auto"></audio>
       <button type="button" id="buttonAdd" class="nes-btn is-primary">
         Click me!
       </button>
@@ -31,6 +32,14 @@
       </button>
       <button id="buttonWorker" class="nes-btn is-disabled">Hire worker</button>
       <button id="buttonRobot" class="nes-btn is-disabled">Buy a robot</button>
+      <p>
+        Music by
+        <a
+          href="https://www.youtube.com/channel/UCg4w2hQ-Bqn9Z4VhqrV8X9Q"
+          target="_blank"
+          >@Loeder</a
+        >.
+      </p>
       <script type="text/javascript" src="/js/index.js"></script>
     </div>
   </body>

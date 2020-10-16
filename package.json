@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel serve src/index.html src/js/index.js --open",
-    "deploy": "gh-pages -d dist"
+    "dev": "parcel serve src/index.html --open",
+    "build": "parcel build src/index.html -d build --public-url /personal/",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,7 @@
     "nes.css": "^2.3.0"
   },
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "gh-pages": "^3.1.0"
   }
 }
