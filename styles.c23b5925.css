@@ -1,2 +1,2 @@
 body{height:100vh}#display{text-shadow:2px 0 0 #000,-2px 0 0 #000,0 2px 0 #000,0 -2px 0 #000}#music-icon{align-self:flex-end}.container{background-image:linear-gradient(90deg,#d6ae7b,#eacda3);max-width:800px;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;margin-left:auto;margin-right:auto;box-shadow:0 0 30px 10px #574631}#display,#music-icon{margin:10px}#display{font-size:x-large;background-color:beige;padding:10px;box-shadow:0 0 0 2px #000}.container>button{margin:10px}
-/*# sourceMappingURL=personal/styles.c23b5925.css.map */
+/*# sourceMappingURL=/personal/styles.c23b5925.css.map */
