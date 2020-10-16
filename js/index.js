@@ -124,7 +124,7 @@ var buttonBucket = document.getElementById("buttonBucket");
 var buttonWorker = document.getElementById("buttonWorker");
 var buttonRobot = document.getElementById("buttonRobot");
 var mainTheme = document.getElementById("main-theme");
-var musicIcon = document.getElementById("music-icon");
+var musicIcon = document.getElementById("music-play");
 var money = 0;
 var bonus = 0;
 var workers = 0;
@@ -136,7 +136,7 @@ mainTheme.volume = 0.5;
 mainTheme.play();
 
 function togglePlay() {
-  return mainTheme.paused() ? mainTheme.play() : mainTheme.pause();
+  return mainTheme.paused ? mainTheme.play() : mainTheme.pause();
 }
 
 function moneyFormat(number) {
@@ -254,7 +254,7 @@ buttonAdd.addEventListener("click", addMoney);
 buttonBucket.addEventListener("click", increaseBonus);
 buttonWorker.addEventListener("click", increaseWorker);
 buttonRobot.addEventListener("click", increaseRobot);
-musicIcon.addEventListener("click", musicControl);
+musicIcon.addEventListener("click", togglePlay);
 workerInterval = window.setInterval(workerClick, 5000);
 robotInterval = window.setInterval(robotClick, 1000);
 },{}],"../../../.nvm/versions/node/v14.13.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -285,7 +285,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38435" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45771" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
